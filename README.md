@@ -1,6 +1,7 @@
-# Portal
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
-Transfers data between two colored `portals` (similar to the [Portal](https://en.wikipedia.org/wiki/Portal_(video_game)) video game).  This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
+# Portal
+Transfers data between two colored portals (similar to the [Portal](https://en.wikipedia.org/wiki/Portal_(video_game)) video game).  This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
 
 ## TODO
 - ExUnit tests
