@@ -14,14 +14,14 @@ defmodule Portal.Door do
   end
 
   @doc """
-  Get the data currently in the `door`.
+  Get the data currently in `door`.
   """
   def get(door) do
     Agent.get(door, fn list -> list end)
   end
 
   @doc """
-  Pushes `value` into the door.
+  Pushes `value` into `door`.
   """
   def push(door, value) do
     Agent.update(door, fn list -> [value|list] end)
