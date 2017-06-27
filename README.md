@@ -7,8 +7,11 @@ Transfers data between two colored portals (similar to the [Portal](https://en.w
 - ExUnit tests
 - Generate ExDoc documentation
 - Docker
-- Update readme badges
-- Build, static analysis, etc
+- Travis CI
+- Coveralls code coverage
+- Code Climate
+- Dialyzer
+- Other tools from Awesome Elixir
 
 ## Usage
 ```
