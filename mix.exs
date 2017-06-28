@@ -15,7 +15,7 @@ defmodule Portal.Mixfile do
     [extra_applications: [:logger],
      mod: {Portal.Application, []}]
   end
-  
+
   defp deps do
     [{:credo, "~> 0.3", only: [:dev, :test]}]
   end

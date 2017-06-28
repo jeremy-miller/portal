@@ -59,6 +59,5 @@ iex> Portal.push_data(portal, :left)
 ## TODO
 - ExUnit tests
 - Coveralls code coverage
-- Code Climate
 - Dialyzer
 - Other tools from Awesome Elixir
