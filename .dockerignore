@@ -1,7 +1,9 @@
+_build/
+deps/
+.codeclimate.yml
 .git
 .gitignore
+.travis.yml
 Dockerfile
-_build/
 LICENSE
-mix.lock
 README.md

@@ -3,6 +3,8 @@ defmodule Portal do
   Create a Portal with two colored doors for transferring data.
   """
 
+  alias Portal.Door
+
   @doc """
   The `left` and `right` doors of the Portal.
   """
@@ -21,7 +23,7 @@ defmodule Portal do
   def transfer(left, right, data) do
     # Add all data to the portal on the left.
     for item <- data do
-      Portal.Door.push(left, item)
+      Door.push(left, item)
     end
 
     %Portal{left: left, right: right}
@@ -45,9 +47,9 @@ defmodule Portal do
   defp push(from, to) do
     # If possible, pushes data from the `from` door to the `to` door.
     # Otherwise, do nothing.
-    case Portal.Door.pop(from) do
+    case Door.pop(from) do
       :error        -> :ok
-      {:ok, value}  -> Portal.Door.push(to, value)
+      {:ok, value}  -> Door.push(to, value)
     end
   end
 end
