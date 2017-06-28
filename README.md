@@ -62,4 +62,3 @@ iex> Portal.push_data(portal, :left)
 - ExUnit tests
 - Coveralls code coverage
 - Dialyzer
-- Other tools from Awesome Elixir
