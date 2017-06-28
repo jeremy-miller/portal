@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/jeremy-miller/portals.svg?branch=master)](https://travis-ci.org/jeremy-miller/portals)
+[![Code Climate](https://codeclimate.com/github/jeremy-miller/portals/badges/gpa.svg)](https://codeclimate.com/github/jeremy-miller/portals)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
 # Portals
