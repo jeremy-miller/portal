@@ -1,6 +1,6 @@
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
-# Portal
+# Portals
 Transfers data between two colored portals (similar to the [Portal](https://en.wikipedia.org/wiki/Portal_(video_game)) video game).
 This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
 This implementation uses a Docker container to isolate the execution environment.
@@ -18,7 +18,7 @@ Before interacting with the portals, the Docker container must be built: ```dock
 TBD
 
 ### Run
-1. To compile portal application and run the *iex* REPL, execute the following command: ```docker run -it --rm jeremymiller/portal```
+1. To compile the portal application and run the *iex* REPL, execute the following command: ```docker run -it --rm jeremymiller/portal```
 
 2. Once the files compile and the REPL starts you should see an ```iex(1)>``` prompt.
 At the prompt, first create two portals by executing the following commands (you can change the colors if you want):
