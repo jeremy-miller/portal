@@ -28,7 +28,7 @@ iex> Portal.shoot(:orange)
 iex> Portal.shoot(:blue)
 {:ok, #PID<0.74.0>}
 ```
-*NOTE: You may see different PID values, but that is ok.*
+*NOTE: You may see different PID values, that is ok.*
 
 3. Now that the portals have been created, we can setup the data transfer using the two colored portals you defined above and some data.
 In this example we'll use ```[1, 2, 3, 4]``` as our data to be transferred.
