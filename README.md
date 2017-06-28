@@ -58,7 +58,6 @@ iex> Portal.push_data(portal, :left)
 
 ## TODO
 - ExUnit tests
-- Travis CI
 - Coveralls code coverage
 - Code Climate
 - Dialyzer
