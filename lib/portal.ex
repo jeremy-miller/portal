@@ -13,14 +13,14 @@ defmodule Portal do
   @doc """
   Create a new Portal door with given `color` in the supervisor.
   """
-  def shoot(color) do
+  def create(color) do
     Supervisor.start_child(Portal.Supervisor, [color])
   end
 
   @doc """
   Setup transfer of `data` between `left` and `right` doors.
   """
-  def transfer(left, right, data) do
+  def setup(left, right, data) do
     # Add all data to the portal on the left.
     for item <- data do
       Door.push(left, item)

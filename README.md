@@ -26,9 +26,9 @@ TBD
 2. Once the files compile and the REPL starts you should see an ```iex(1)>``` prompt.
 At the prompt, first create two portals by executing the following commands (you can change the colors if you want):
 ```elixir
-iex> Portal.shoot(:orange)
+iex> Portal.create(:orange)
 {:ok, #PID<0.72.0>}
-iex> Portal.shoot(:blue)
+iex> Portal.create(:blue)
 {:ok, #PID<0.74.0>}
 ```
 *NOTE: You may see different PID values, that is ok.*
@@ -36,7 +36,7 @@ iex> Portal.shoot(:blue)
 3. Now that the portals have been created, we can setup the data transfer using the two colored portals you defined above and some data.
 In this example we'll use ```[1, 2, 3, 4]``` as our data to be transferred.
 ```elixir
-iex> portal = Portal.transfer(:orange, :blue, [1, 2, 3, 4])
+iex> portal = Portal.setup(:orange, :blue, [1, 2, 3, 4])
 
        :orange <=> :blue
   [1, 2, 3, 4] <=> []
