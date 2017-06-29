@@ -10,7 +10,7 @@ defmodule PortalDoorTest do
 
   test "start_link/1 returns named PID" do
     color = :orange
-    assert {:ok, pid} = Door.start_link(color)
+    {:ok, pid} = Door.start_link(color)
     assert Process.info(pid, :registered_name) == {:registered_name, color}
   end
 
