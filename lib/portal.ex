@@ -36,7 +36,7 @@ defmodule Portal do
     case direction do
       :left   -> push(portal.right, portal.left)
       :right  -> push(portal.left, portal.right)
-      _       -> :error
+      _       -> raise ArgumentError, message: "Invalid direction: #{direction}"
     end
 
     # Return the portal so our protocol displays it properly.
