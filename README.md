@@ -57,7 +57,3 @@ iex> Portal.push_data(portal, :left)
   [1, 2, 3, 4] <=> []
 
 ```
-
-## TODO
-- ExCheck property testing
-- Dialyzer
