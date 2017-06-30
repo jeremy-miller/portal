@@ -11,8 +11,8 @@ before_script:
   - export PLT_LOCATION=/home/travis/$PLT_FILENAME
   # Download PLT from danielberkompas/travis_elixir_plts on Github
   # Store in $PLT_LOCATION
-  - wget -O $PLT_LOCATION https://raw.github.com/danielberkompas/travis_elixir_plts/master/$PLT_FILENAME
+  #- wget -O $PLT_LOCATION https://raw.github.com/danielberkompas/travis_elixir_plts/master/$PLT_FILENAME
 script:
   - mix credo
-  - mix dialyzer --no_check_plt --plt $PLT_LOCATION --no_native _build/test/lib/portals/ebin
+  #- mix dialyzer --no_check_plt --plt $PLT_LOCATION --no_native _build/test/lib/portals/ebin
   - mix test
