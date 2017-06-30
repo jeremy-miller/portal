@@ -8,13 +8,15 @@ defmodule Portal.Door do
 
   The color is given as a name so we can identify
   the door by color name instead of using a PID.
+
+  Returns `{:ok, pid}` where `pid` is the PID of the created process.
   """
   def start_link(color) do
     Agent.start_link(fn -> [] end, name: color)
   end
 
   @doc """
-  Get the data currently in `door`.
+  Returns the data currently in `door`.
   """
   def get(door) do
     Agent.get(door, fn list -> list end)
@@ -22,6 +24,8 @@ defmodule Portal.Door do
 
   @doc """
   Pushes `value` into `door`.
+
+  Returns `:ok`.
   """
   def push(door, value) do
     Agent.update(door, fn list -> [value|list] end)
@@ -31,7 +35,7 @@ defmodule Portal.Door do
   Pops a value from the `door`.
 
   Returns `{:ok, value}` if there is a value
-  or `:error` if the hole is currently empty.
+  or `:error` if the door is currently empty.
   """
   def pop(door) do
     Agent.get_and_update(door, fn

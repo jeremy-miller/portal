@@ -12,6 +12,8 @@ defmodule Portal do
 
   @doc """
   Create a new Portal door with given `color` in the supervisor.
+
+  Returns `{:ok, pid}` where `pid` is the PID of the created process.
   """
   def create(color) do
     Supervisor.start_child(Portal.Supervisor, [color])
@@ -19,6 +21,8 @@ defmodule Portal do
 
   @doc """
   Setup transfer of `data` between `left` and `right` doors.
+
+  Returns a Portal struct: `%Portal{left: left, right: right}`
   """
   def setup(left, right, data) do
     # Add all data to the portal on the left.
@@ -31,6 +35,13 @@ defmodule Portal do
 
   @doc """
   Pushes data in one direction (to the `:left` or `:right`) for the given `portal`.
+
+  Returns a pretty-printed Portal struct showing the current status of the Portals.
+  E.g.
+      :orange <=> :blue
+    [1, 2, 3] <=> []
+ 
+  Raises an ArgumentError if an invalid `direction` is used.
   """
   def push_data(portal, direction) do
     case direction do
