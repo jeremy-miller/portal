@@ -6,4 +6,6 @@ install:
   - mix local.hex --force
   - mix deps.get
 script:
+  - mix credo
+  - mix dialyzer
   - mix test
