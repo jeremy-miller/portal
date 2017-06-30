@@ -18,8 +18,7 @@ defmodule Portal.Mixfile do
 
   defp deps do
     [
-      {:credo, "~> 0.3", only: [:dev, :test]},
-      {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
+      {:credo, "~> 0.3", only: [:dev, :test]}
     ]
   end
 end
