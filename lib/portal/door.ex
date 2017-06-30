@@ -11,6 +11,7 @@ defmodule Portal.Door do
 
   Returns `{:ok, pid}` where `pid` is the PID of the created process.
   """
+  @spec start_link(color) :: {:ok, pid}
   def start_link(color) do
     Agent.start_link(fn -> [] end, name: color)
   end
