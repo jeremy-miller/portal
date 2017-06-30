@@ -15,13 +15,19 @@ To interact with the portal data transfer system, follow the steps below.
 - [Docker](https://docs.docker.com/engine/installation/)
 
 ### Setup
-Before interacting with the portals, the Docker container must be built: ```docker build -t jeremymiller/portal .```
+Before interacting with the portals, the Docker container must be built: ```docker build -t jeremymiller/portals .```
+
+### Static Code Analysis
+To run the [Credo](https://github.com/rrrene/credo) static code analyzer, execute the following command: ```docker run -it --rm jeremymiller/portals mix credo```
+
+To run the [Dialyzer](http://erlang.org/doc/man/dialyzer.html) static code analyzer, execute the following command: ```docker run -it --rm jeremymiller/portals mix dialyzer```
+*NOTE: The first time this command is run it may take a long time since it needs to create the PLT (see [here](https://github.com/jeremyjh/dialyxir#usage) for more information).*
 
 ### Test
-TBD
+To run the Portal tests, execute the following command: ```docker run -it --rm jeremymiller/portals mix test```
 
 ### Run
-1. To compile the portal application and run the *iex* REPL, execute the following command: ```docker run -it --rm jeremymiller/portal```
+1. To compile the portal application and run the *iex* REPL, execute the following command: ```docker run -it --rm jeremymiller/portals```
 
 2. Once the files compile and the REPL starts you should see an ```iex(1)>``` prompt.
 At the prompt, first create two portals by executing the following commands (you can change the colors if you want):
