@@ -59,6 +59,5 @@ iex> Portal.push_data(portal, :left)
 ```
 
 ## TODO
-- Coveralls code coverage
 - ExCheck property testing
 - Dialyzer
