@@ -15,6 +15,7 @@ defmodule Portal do
 
   Returns `{:ok, pid}` where `pid` is the PID of the created process.
   """
+  @spec create(:atom) :: {:ok, pid}
   def create(color) do
     Supervisor.start_child(Portal.Supervisor, [color])
   end
@@ -24,6 +25,7 @@ defmodule Portal do
 
   Returns a Portal struct: `%Portal{left: left, right: right}`
   """
+  @spec setup(pid, pid, list) :: struct
   def setup(left, right, data) do
     # Add all data to the portal on the left.
     for item <- data do
@@ -55,6 +57,7 @@ defmodule Portal do
   end
 
   @doc false
+  @spec push(pid, pid) :: :ok
   defp push(from, to) do
     # If possible, pushes data from the `from` door to the `to` door.
     # Otherwise, do nothing.
