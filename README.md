@@ -6,10 +6,9 @@
 # Portals
 Transfers data between two colored portals (similar to the [Portal](https://en.wikipedia.org/wiki/Portal_(video_game)) video game).
 This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
-This implementation uses a Docker container to isolate the execution environment.
 
 ## Usage
-To interact with the portal data transfer system, follow the steps below.
+This implementation uses a Docker container to isolate the execution environment.
 
 ### Prerequisites
 - [Docker](https://docs.docker.com/engine/installation/)
