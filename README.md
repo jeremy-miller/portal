@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/jeremy-miller/portals.svg?branch=master)](https://travis-ci.org/jeremy-miller/portals)
+[![Coverage Status](https://coveralls.io/repos/github/jeremy-miller/portals/badge.svg?branch=master)](https://coveralls.io/github/jeremy-miller/portals?branch=master)
 [![Code Climate](https://codeclimate.com/github/jeremy-miller/portals/badges/gpa.svg)](https://codeclimate.com/github/jeremy-miller/portals)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 [![Elixir Version](https://img.shields.io/badge/Elixir-1.4-blue.svg)]()
