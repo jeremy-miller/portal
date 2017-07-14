@@ -1,9 +1,7 @@
 _build/
 deps/
 .codeclimate.yml
-.git
 .gitignore
 .travis.yml
-Dockerfile
 LICENSE
 README.md
