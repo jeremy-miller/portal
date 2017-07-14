@@ -3,10 +3,11 @@ services:
   - docker
 env:
   - MIX_ENV=test
+  - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN
 before_install:
   - docker build -t jeremymiller/portals .
 script:
   - docker run -it --rm jeremymiller/portals mix credo
   - docker run -it --rm jeremymiller/portals mix test
 after_success:
-  - docker run -it --rm jeremymiller/portals mix coveralls.post --token $COVERALLS_REPO_TOKEN
+  - docker run -it --rm jeremymiller/portals mix coveralls.post
