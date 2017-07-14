@@ -5,14 +5,8 @@ env:
   - MIX_ENV=test
 before_install:
   - docker build -t jeremymiller/portals .
-before_script:
-  # Download pre-built PLT from https://github.com/danielberkompas/travis_elixir_plts
-  - export PLT_FILENAME=elixir-${TRAVIS_ELIXIR_VERSION}_${TRAVIS_OTP_RELEASE}.plt
-  - export PLT_LOCATION=/home/travis/$PLT_FILENAME
-  - wget -O $PLT_LOCATION https://raw.github.com/danielberkompas/travis_elixir_plts/master/$PLT_FILENAME
 script:
   - docker run -it --rm jeremymiller/portals mix credo
-  - docker run -it --rm jeremymiller/portals mix dialyzer --no_check_plt --plt $PLT_LOCATION --no_native
   - docker run -it --rm jeremymiller/portals mix test
 after_success:
   - docker run -it --rm jeremymiller/portals mix coveralls.travis
