@@ -9,4 +9,4 @@ script:
   - docker run -it --rm jeremymiller/portals mix credo
   - docker run -it --rm jeremymiller/portals mix test
 after_success:
-  - docker run -it --rm jeremymiller/portals mix coveralls.post
+  - docker run -it --rm jeremymiller/portals mix coveralls.post --token $COVERALLS_REPO_TOKEN
