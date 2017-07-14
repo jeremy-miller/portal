@@ -63,3 +63,6 @@ iex> Portal.push_data(portal, :left)
   [1, 2, 3, 4] <=> []
 
 ```
+
+## License
+[MIT](https://github.com/jeremy-miller/portals/blob/master/LICENSE)
