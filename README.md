@@ -8,13 +8,21 @@
 Transfers data between two colored portals (similar to the [Portal](https://en.wikipedia.org/wiki/Portal_(video_game)) video game).
 This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
 
+- [Usage](#usage)
+  - [Prerequisites](#prerequisites)
+  - [Build](#build)
+  - [Static Code Analysis](#static-code-analysis)
+  - [Test](#test)
+  - [Run](#run)
+- [License](#license)
+
 ## Usage
 This implementation uses a Docker container to isolate the execution environment.
 
 ### Prerequisites
 - [Docker](https://docs.docker.com/engine/installation/)
 
-### Setup
+### Build
 Before interacting with the portals, the Docker container must be built: ```docker build -t jeremymiller/portals .```
 
 ### Static Code Analysis
