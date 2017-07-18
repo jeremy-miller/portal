@@ -1,17 +1,10 @@
 sudo: required
-language: elixir
-elixir:
-  - 1.4
-env:
-  - MIX_ENV=test
 services:
   - docker
-env:
-  - MIX_ENV=test
 before_install:
   - docker build -t jeremymiller/portals .
 script:
   - docker run -it --rm jeremymiller/portals mix credo
   - docker run -it --rm jeremymiller/portals mix test
 after_success:
-  - mix coveralls.travis  # not working inside docker container
+  - docker run -it --rm jeremymiller/portals MIX_ENV=test mix coveralls.post --token $COVERALLS_REPO_TOKEN
