@@ -18,7 +18,7 @@ This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
 - [License](#license)
 
 ## Motivation
-I created this project to learn Elixir.
+I created this project to try Elixir.
 
 ## Usage
 This implementation uses a Docker container to isolate the execution environment.
