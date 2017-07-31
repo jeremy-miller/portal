@@ -8,14 +8,18 @@
 Transfers data between two colored portals (similar to the [Portal](https://en.wikipedia.org/wiki/Portal_(video_game)) video game).
 This project is based on [this](http://howistart.org/posts/elixir/1/) tutorial.
 
-- [Motivation](#motivation)
-- [Usage](#usage)
-  - [Prerequisites](#prerequisites)
-  - [Build](#build)
-  - [Static Code Analysis](#static-code-analysis)
-  - [Test](#test)
-  - [Run](#run)
-- [License](#license)
+<details>
+<summary><strong>Table of Contents</strong></summary>
+
+* [Motivation](#motivation)
+* [Usage](#usage)
+  + [Prerequisites](#prerequisites)
+  + [Build](#build)
+  + [Static Code Analysis](#static-code-analysis)
+  + [Test](#test)
+  + [Run](#run)
+* [License](#license)
+</details>
 
 ## Motivation
 I created this project to try Elixir.
